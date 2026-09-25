@@ -1,20 +1,36 @@
-import React from 'react'
-import banner from '../assets/banner1.png'
+import React from "react";
+import banner from "../assets/banner1.png";
 
 const MidBanner = () => {
   return (
-    <div className='bg-gray-100 md:py-24'>
-      <div className='relative max-w-7xl mx-auto md:rounded-2xl pt-28 bg-cover bg-center h-137.5 md:h-150 ' style={{backgroundImage: `url(${banner})`, backgroundPosition:'center', backgroundAttachment: 'fixed'}}>
-        <div className='absolute inset-0 bg-black/60 md:rounded-2xl bg-opacity-50 flex items-center justify-center'>
-            <div className='text-center text-white px-4'>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold mb-4'>Discover Everything You Love, All in One Place</h1>
-                <p className='text-lg md:text-xl mb-6'>Shop the latest products across fashion, beauty, electronics, home essentials and more.</p>
-                <button className='bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300'>Shop Now</button>
-            </div>
+    <section className="bg-gray-100 px-4 py-8 sm:px-6 md:py-16 lg:px-8">
+      <div
+        className="relative mx-auto flex min-h-105 w-full max-w-7xl items-center justify-center overflow-hidden rounded-xl bg-cover bg-center sm:min-h-120 md:min-h-140 md:rounded-2xl"
+        style={{
+          backgroundImage: `url(${banner})`,
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 rounded-xl bg-black/55 md:rounded-2xl"></div>
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white sm:px-6">
+          <h1 className="mb-4 text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            Discover Everything You Love, All in One Place
+          </h1>
+
+          <p className="mb-6 text-base leading-relaxed sm:text-lg md:text-xl">
+            Shop the latest products across fashion, beauty, electronics,
+            home essentials and more.
+          </p>
+
+          <button className="rounded-lg bg-red-500 px-5 py-2.5 font-semibold text-white transition duration-300 hover:bg-red-600 sm:px-6 sm:py-3">
+            Shop Now
+          </button>
         </div>
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default MidBanner
+export default MidBanner;
