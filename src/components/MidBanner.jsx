@@ -1,5 +1,6 @@
 import React from "react";
 import banner from "../assets/banner1.png";
+import { Link } from "react-router-dom";
 
 const MidBanner = () => {
   return (
@@ -24,9 +25,11 @@ const MidBanner = () => {
             home essentials and more.
           </p>
 
-          <button className="rounded-lg bg-red-500 px-5 py-2.5 font-semibold text-white transition duration-300 hover:bg-red-600 sm:px-6 sm:py-3">
-            Shop Now
-          </button>
+          <Link to="/products">
+            <button className="rounded-lg bg-red-500 px-5 py-2.5 font-semibold text-white transition duration-300 hover:bg-red-600 sm:px-6 sm:py-3">
+              Shop Now
+            </button>
+          </Link>
         </div>
       </div>
     </section>
