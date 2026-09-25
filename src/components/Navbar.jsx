@@ -1,4 +1,4 @@
-import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/react";
+import { Show, SignInButton, UserButton } from "@clerk/react";
 import { MapPin } from "lucide-react";
 import React, { useState } from "react";
 import { CgClose } from "react-icons/cg";
@@ -8,7 +8,6 @@ import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { HiMenu, HiMenuAlt3 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { RiMenu3Fill } from "react-icons/ri";
 
 const Navbar = ({ location, getLocation, openDropDown, setOpenDropDown }) => {
   const { cartItem } = useCart();
